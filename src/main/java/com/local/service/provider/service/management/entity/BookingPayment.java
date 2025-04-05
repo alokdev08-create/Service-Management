@@ -20,9 +20,9 @@ public class BookingPayment {
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Integer id;
 
-	    @ManyToOne
-	    @JoinColumn(name = "booking_id", nullable = false)
-	    private ServiceBooking booking;
+//	    @ManyToOne
+//	    @JoinColumn(name = "booking_id", nullable = false)
+//	    private ServiceBooking booking;
 
 	    private LocalDateTime paymentDate;
 

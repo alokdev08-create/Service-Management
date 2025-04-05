@@ -7,4 +7,8 @@ import com.local.service.provider.service.management.entity.ServiceCategory;
 @Repository
 public interface ServiceCategoryRepository extends JpaRepository<ServiceCategory, Long> {
 
+	ServiceCategory findById(Integer id);
+
+	ServiceCategory findByCategoryName(String categoryName);
+
 }
