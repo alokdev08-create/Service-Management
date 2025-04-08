@@ -1,5 +1,7 @@
 package com.local.service.provider.service.management.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,11 @@ public class ServiceProviderServiceImpl implements ServiceProviderService {
 	@Override
 	public ServiceProvider createServiceProvider(ServiceProvider serviceProvider) {
 		return serviceProviderRepository.save(serviceProvider);
+	}
+
+	@Override
+	public List<ServiceProvider> fetchAllServiceProviderDetails() {
+		return serviceProviderRepository.findAll();
 	}
 
 }

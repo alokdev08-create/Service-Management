@@ -11,4 +11,5 @@ public interface CustomerService {
 	Customer fetchByCustomerNamer(String name);
 	Customer fetchByCustomerEmail(String email);
 	List<Customer> fetchByCustomerAddress(String address);
+	Customer updateCustomer(Integer id, Customer customerDetails);
 	    }

@@ -20,6 +20,8 @@ public interface BookingPaymentService {
 
 	public List<BookingPayment> fetchByPaymentMethod(String paymentMethod);
 	public List<BookingPayment> fetchByPaymentAmount(Double paymentAmount);
+
+	public BookingPayment updateBookingPayment(long id, BookingPayment bookingPaymentDetails);
 	
 
 }

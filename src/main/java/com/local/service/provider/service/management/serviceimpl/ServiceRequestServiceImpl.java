@@ -1,5 +1,7 @@
 package com.local.service.provider.service.management.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -54,5 +56,14 @@ public class ServiceRequestServiceImpl implements ServiceRequestService {
 	}
 
 
+	@Override
+	public List<ServiceRequest> fetchServiceRequestById(Integer id) {
+		return serviceRequestRepository.findById(id);
+	}
 
+
+	@Override
+	public List<ServiceRequest> fetchAllServiceRequestDetails() {
+		return serviceRequestRepository.findAll();
+	}
 }
