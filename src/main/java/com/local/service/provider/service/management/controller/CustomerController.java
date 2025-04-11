@@ -57,7 +57,7 @@ public class CustomerController {
 	    public ResponseEntity<Customer> updateCustomer(@PathVariable Integer id, @RequestBody Customer customerDetails) {
 	        Customer updatedCustomer = customerService.updateCustomer(id, customerDetails); 
 	        if (updatedCustomer == null) {
-	            return ResponseEntity.notFound().build(); // Fixed ResponseEntity method call
+	            return ResponseEntity.notFound().build(); 
 	        }
 	        return ResponseEntity.ok(updatedCustomer);
 	    }
