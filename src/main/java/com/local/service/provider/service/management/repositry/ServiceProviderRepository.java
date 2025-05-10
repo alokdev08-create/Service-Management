@@ -7,4 +7,6 @@ import com.local.service.provider.service.management.entity.ServiceProvider;
 @Repository
 public interface ServiceProviderRepository extends JpaRepository<ServiceProvider, Long> {
 
+	ServiceProvider findById(Integer id);
+
 }
